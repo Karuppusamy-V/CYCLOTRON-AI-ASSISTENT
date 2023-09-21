@@ -70,11 +70,7 @@ function speakThis(message) {
         const finalText = "My name is Cyclotron made by my boss Karuppusamy";
         speech.text = finalText;
     }
-
-    else if(message.includes('tamil')) {
-        const finalText = "Sorry I don't Know tamil";
-        speech.text = finalText;
-    }
+    
     else if(message.includes('karuppasamy')) {
         const finalText = "He is My boss who give life to me";
         speech.text = finalText;
