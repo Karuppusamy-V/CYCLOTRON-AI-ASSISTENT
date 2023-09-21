@@ -56,23 +56,23 @@ function speakThis(message) {
 
     speech.text = "I did not understand what you said please try again";
 
-    if(message.includes('hey') || message.includes('hello')) {
-        const finalText = "Hello Boss";
+    if(message.includes('hey') || message.includes('hello') || message.includes('hai') || message.includes('hi')) {
+        const finalText = "Hello I am Cyclotron made by Karuppusamy my boss";
         speech.text = finalText;
     }
 
     else if(message.includes('how are you')) {
-        const finalText = "I am fine boss tell me how can i help you";
+        const finalText = "I am fine boss tell me how can I help you";
         speech.text = finalText;
     }
 
     else if(message.includes('name')) {
-        const finalText = "My name is Cyclotron";
+        const finalText = "My name is Cyclotron made by my boss Karuppusamy";
         speech.text = finalText;
     }
 
     else if(message.includes('tamil')) {
-        const finalText = "Sorry I don't Know";
+        const finalText = "Sorry I don't Know tamil";
         speech.text = finalText;
     }
     else if(message.includes('karuppasamy')) {
