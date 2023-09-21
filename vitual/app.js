@@ -56,7 +56,7 @@ function speakThis(message) {
 
     speech.text = "I did not understand what you said please try again";
 
-    if(message.includes('hey') || message.includes('hello') || message.includes('who are you') ||message.includes('hai') || message.includes('hi') ) {
+    if(message.includes('hey') || message.includes('hello') || message.includes('who are you') ) {
         const finalText = "Hello I am Cyclotron made by Karuppusamy my boss";
         speech.text = finalText;
     }
