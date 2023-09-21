@@ -56,7 +56,7 @@ function speakThis(message) {
 
     speech.text = "I did not understand what you said please try again";
 
-    if(message.includes('hey') || message.includes('hello') || message.includes('hai') || message.includes('hi')) {
+    if(message.includes('hey') || message.includes('hello')) {
         const finalText = "Hello I am Cyclotron made by Karuppusamy my boss";
         speech.text = finalText;
     }
@@ -121,6 +121,13 @@ function speakThis(message) {
         const finalText = "Opening Calculator";
         speech.text = finalText;
     }
+    else if(message.includes('whatsapp')) {
+        window.open('Whatsapp:///')
+        const finalText = "Opening Whatsapp";
+        speech.text = finalText;
+    }
+
+ 
 
     else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
